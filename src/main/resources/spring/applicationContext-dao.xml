@@ -33,7 +33,6 @@
 				<entry key="master" value-ref="masterDataSource" />
 				<entry key="slave01" value-ref="slave01DataSource" />
 				<entry key="slave02" value-ref="slave02DataSource" />
-				<entry key="slave03" value-ref="slave02DataSource" />
 			</map>
 		</property>
 		<!-- 设置默认的数据源，这里默认走写库 -->

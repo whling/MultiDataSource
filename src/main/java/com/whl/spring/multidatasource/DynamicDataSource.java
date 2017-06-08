@@ -81,7 +81,7 @@ public class DynamicDataSource extends AbstractRoutingDataSource {
 	}
 
 	/**
-	 * 轮询算法实现,这个算法测试有点问题貌似有点，并不能轮询slave，待改进
+	 * 轮询算法实现
 	 *
 	 * @return
 	 */
