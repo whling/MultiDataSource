@@ -34,10 +34,10 @@
 
 
 	<!-- 切面 -->
-	<aop:config>
+	<!-- <aop:config>
 		<aop:advisor advice-ref="txAdvice"
 			pointcut="execution(* com.whl.spring.service.*.*(..))" />
-	</aop:config>
+	</aop:config> -->
 
 	<!-- 定义AOP切面处理器 -->
 	<!-- <bean class="com.whl.spring.multidatasource.DataSourceAspect" id="dataSourceAspect" 

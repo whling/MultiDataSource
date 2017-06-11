@@ -9,6 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -21,10 +22,17 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
+	@RequestMapping("/getuser/{id}")
+	@ResponseBody
+	public User getUserById(@PathVariable Integer id) {
+		User user = userService.getByPrimaryKey(id);
+		return user;
+	}
+
 	@RequestMapping("hello")
 	@ResponseBody
 	public String hello() {
-//		int i = 1 / 0;
+		// int i = 1 / 0;
 		return "hello world";
 	}
 
